@@ -1,0 +1,59 @@
+* {
+    font-family: 'DM Sans', Helvetica, sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+    margin: 20px 40px;
+}
+
+#page-container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+div#navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+div#navbar div {
+}
+
+#nav-spacer {
+    flex: 2;
+}
+
+#hero-banner {
+    background-color: white;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+#hero-title {
+    background-color: rgb(240, 248, 255);
+    margin: 0;
+    padding-bottom: 2vh;
+}
+
+#hero-text {
+    background-color: rgb(240, 248, 255);
+    margin: 0;
+    padding-bottom: 2vh;
+}
