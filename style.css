@@ -1,6 +1,188 @@
+/* @font-face {
+    font-family: 'Basteleur';
+    src: url(./sources/Basteleur-Bold.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'Basteleur';
+    src: url(./sources/Basteleur-Moonlight.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     all: unset;
+}
+
+head {
+    display: none;
+}
+
+html {
+    height: 100%;
+}
+
+body, #page-container {
+    min-height: 100%;
+}
+
+body {
+    /* background-color: azure; */
+}
+
+#page-container {
+    margin: 0 auto;
+    /* background-color: gainsboro; */
+}
+
+div {
+    all: revert;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Basteleur', Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 7rem;
+}
+
+p, a {
     font-family: 'DM Sans', Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+a {
+    font-size: 1.2rem;
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgb(76, 0, 255);
+}
+
+@media only screen and (max-width: 500px) {
+    h1, h2 {
+        font-size:calc(2rem + 1vw);
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    h1, h2 {
+        font-size:calc(2.5rem + 1.2vw);
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 660px) {
+    
+    h1, h2 {
+        font-size:calc(3.5rem + 1vw);
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    a {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (min-width: 1040px) {
+    h1, h2 {
+        font-size:calc(5.5rem + 1vw);
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    a {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 1240px) {
+    h1, h2 {
+        font-size:calc(7rem + 1vw);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.section div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div#div-nav {
+    /* background-color: honeydew; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 30vh;
+}
+
+div#nav-spacer {
+    flex: 2;
+}
+
+div.section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    background-color: rgb(194, 230, 194);
+    padding-bottom: 40vh;
+}
+
+div.section div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div#hero-name {
+    background-color: rgb(240, 255, 240);
+}
+
+div#hero-title {
+    background-color: rgb(214, 245, 214);
+}
+
+div#hero-spacer {
+    flex: 100px;
+}
+
+div#resume-text {
+    background-color: rgb(240, 255, 240);
 }
 
 
