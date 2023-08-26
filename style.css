@@ -35,7 +35,6 @@ body {
 
 #page-container {
     margin: 0 auto;
-    /* background-color: gainsboro; */
 }
 
 div {
@@ -76,14 +75,13 @@ a:hover {
 }
 
 div#div-nav {
-    /* background-color: honeydew; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex: 1;
     gap: 20px;
     padding: 20px;
-    margin-bottom: 20vh;
+    margin-bottom: 18vh;
 }
 
 div#nav-name a:hover {
@@ -96,7 +94,7 @@ div#nav-spacer {
     visibility: hidden;
 }
 
-div.section {
+div.segment {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -104,7 +102,7 @@ div.section {
     justify-content: flex-end;
 }
 
-div.section div {
+div.segment div {
     padding: 20px;
 }
 
@@ -123,7 +121,7 @@ div.resume-container {
     gap: 20px;
 }
 
-div.resume-title {
+div.resume-title-div {
     margin-top: 10vh;
 }
 
@@ -136,10 +134,31 @@ div.resume-container div {
     font-weight: bold;
 }
 
-.edu-date, .exp-date {
+.item-date {
     color: rgb(255, 255, 253, 50%);
 }
 
+div#resume-edu {
+    padding-bottom: 10vh;
+}
+
+div#links-container {
+    background-color: rgb(255, 255, 253);
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 10vh 0;
+}
+
+div#links-container div {
+    background-color: rgb(47, 0, 255);
+}
+
+div#links-container div:hover {
+    background-color: rgb(253, 36, 65);
+    color: rgb(20, 20, 20);
+    cursor: pointer;
+}
 
 
 
