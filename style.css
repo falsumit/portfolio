@@ -41,7 +41,7 @@ div {
     all: revert;
 }
 
-h1, h2, h3, h4, p, a {
+h1, h2, h3, p, a {
     color: rgb(255, 255, 253);
 }
 
@@ -166,7 +166,7 @@ div#links-container div:hover {
 
 
 @media only screen and (max-width: 500px) {
-    h1, h2 {
+    h1, h2, h3 {
         font-size:calc(2rem + 1vw);
     }
 
@@ -184,7 +184,7 @@ div#links-container div:hover {
 }
 
 @media only screen and (min-width: 500px) {
-    h1, h2 {
+    h1, h2, h3 {
         font-size:calc(2.5rem + 1.2vw);
     }
 
@@ -203,7 +203,7 @@ div#links-container div:hover {
 
 @media only screen and (min-width: 660px) {
     
-    h1, h2 {
+    h1, h2, h3 {
         font-size:calc(3rem + 1.5vw);
     }
 
@@ -222,7 +222,7 @@ div#links-container div:hover {
 
 @media only screen and (min-width: 800px) {
     
-    h1, h2 {
+    h1, h2, h3 {
         font-size:calc(3.8rem + 1.3vw);
     }
 
@@ -240,7 +240,7 @@ div#links-container div:hover {
 }
 
 @media only screen and (min-width: 1080px) {
-    h1, h2 {
+    h1, h2, h3 {
         font-size:calc(5.5rem + 1vw);
     }
 
@@ -250,7 +250,7 @@ div#links-container div:hover {
 }
 
 @media only screen and (min-width: 1340px) {
-    h1, h2 {
+    h1, h2, h3 {
         font-size:calc(7rem + 1vw);
     }
 }
