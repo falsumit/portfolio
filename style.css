@@ -86,6 +86,11 @@ div#div-nav {
     margin-bottom: 20vh;
 }
 
+div#nav-name a:hover {
+    cursor: crosshair;
+    color: rgb(255, 255, 253);
+}
+
 div#nav-spacer {
     flex: 2;
     visibility: hidden;
