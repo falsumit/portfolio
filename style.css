@@ -1,3 +1,5 @@
+/* Text */
+
 @font-face {
     font-family: 'Basteleur';
     src: url(./sources/Basteleur-Bold.woff) format('woff');
@@ -12,61 +14,25 @@
     font-style: normal;
 }
 
-* {
-    all: unset;
-    cursor: crosshair;
-}
-
-head {
-    display: none;
-}
-
-html {
-    height: 100%;
-}
-
-body, #page-container {
-    min-height: 100%;
-}
-
-body {
-    background-color: rgb(20, 20, 20);
-}
-
-#page-container {
-    margin: 0 auto;
-}
-
-div {
-    all: revert;
-}
-
 h1, h2, h3, p, a {
     color: rgb(255, 255, 253);
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
     font-family: 'Basteleur', Helvetica, sans-serif;
     font-weight: normal;
-    font-size: 7rem;
-}
-
-h1:hover, h2:hover, h3:hover, h4:hover {
-    font-weight: bold;
-    cursor: crosshair;
+    font-size: clamp(2rem, 2rem + 5vw , 8rem);
 }
 
 p, a {
     font-family: 'Inter', Helvetica, sans-serif;
     font-weight: normal;
+    font-size: clamp(1rem, 1rem + 1vw , 1.6rem);
+    text-decoration: none;
 }
 
-p {
-    font-size: 1.6rem;
-}
-
-a {
-    font-size: 1.2rem;
+h1:hover, h2:hover, h3:hover {
+    font-weight: bold;
 }
 
 a:hover {
@@ -74,61 +40,93 @@ a:hover {
     color: rgb(253, 36, 65);
 }
 
-div#div-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 1;
-    gap: 20px;
-    padding: 20px;
-    margin-bottom: 18vh;
+h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
-div#nav-name a:hover {
-    cursor: crosshair;
-    color: rgb(255, 255, 253);
+h2 {
+    margin-bottom: 6vh;
+    margin-top: 4vh;
 }
 
-div#nav-spacer {
-    flex: 2;
-    visibility: hidden;
+/* General Body */
+
+body {
+    background-color: rgb(20, 20, 20);
+    margin: 0;
+}
+
+#page-container {
+    margin: 0 auto;
+    padding: 4vh 4vw 0 4vw;
 }
 
 div.segment {
-    height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-end;
+    margin-left: -4vw;
+    margin-right: -4vw;
 }
 
 div.segment div {
-    padding: 20px;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 
-div#hero-text {
-    margin-bottom: 15vh;
+/* Navigation */
+
+div#div-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 4vh;
 }
 
-div.div-resume {
+/* Hero */
+
+div#hero {
+    padding-top: 8vh;
+    padding-bottom: 12vh;
+}
+
+/* body */
+
+div.div-body {
     background-color: rgb(47, 0, 255);
+    padding-top: 8vh;
+    padding-bottom: 12vh;
 }
 
-div.resume-container {
+div#body-exp {
+    padding-bottom: 8vh;
+}
+
+div#body-edu {
+    padding-top: 0;
+}
+
+div.body-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-div.resume-title-div {
-    margin-top: 10vh;
+div.body-container div {
+    background-color: rgb(20, 20, 20);
+    border-bottom: 4px solid rgb(0, 0, 0);
 }
 
-div.resume-container div {
-    background-color: rgb(20, 20, 20);
-    border-bottom: 4px solid black;
-    padding: 20px;
+div.item-container {
+    padding: 10px !important;
+}
+
+.item-body {
+    margin: 0.5rem;
 }
 
 .item-title {
@@ -139,118 +137,55 @@ div.resume-container div {
     color: rgb(255, 255, 253, 50%);
 }
 
-div#resume-edu {
+/* Links */
+
+div#links {
+    background-color: rgb(255, 255, 253);
+    padding-top: 6vh;
     padding-bottom: 10vh;
 }
 
-div#links-container {
-    background-color: rgb(255, 255, 253);
+#links-title {
+    color: rgb(253, 36, 65);
+}
+
+div.links-container {
+    display: flex;
     flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
-    padding: 10vh 0;
 }
 
-div#links-container div {
+div.links-container div {
     background-color: rgb(47, 0, 255);
-    border-bottom: 4px solid rgb(20, 0, 109);
+    border-bottom: 4px solid rgb(15, 0, 83);
 }
 
-div#links-container div:hover {
+div.links-container div:hover {
     background-color: rgb(253, 36, 65);
-    color: rgb(20, 20, 20);
-    cursor: pointer;
-    border-bottom: 4px solid rgb(145, 0, 19);
+    border-bottom: 4px solid rgb(131, 0, 17);
 }
 
+/* Queries */
 
-
-@media only screen and (max-width: 500px) {
-    h1, h2, h3 {
-        font-size:calc(2rem + 1vw);
+@media only screen and (max-width: 600px) {
+    div.body-container div {
+        width: 100%;
     }
 
-    p {
-        font-size: 1.2rem;
+    div.links-container a {
+        width: calc(100% - 4vw);
     }
 
-    a {
-        font-size: 1.1rem;
+    div.links-container p {
+        text-align: center;
     }
-
-    div#hero-text {
-        margin-top: 5vh;
-    }
-}
-
-@media only screen and (min-width: 500px) {
-    h1, h2, h3 {
-        font-size:calc(2.5rem + 1.2vw);
-    }
-
-    p {
-        font-size: 1.2rem;
-    }
-
-    a {
-        font-size: 1.1rem;
-    }
-
-    div#hero-text {
-        margin-top: 5vh;
-    }
-}
-
-@media only screen and (min-width: 660px) {
     
-    h1, h2, h3 {
-        font-size:calc(3rem + 1.5vw);
+    div#body-edu {
+        padding-bottom: 10vh;
     }
-
-    p {
-        font-size: 1.4rem;
-    }
-
-    a {
-        font-size: 1.2rem;
-    }
-
-    div#hero-text {
-        margin-top: 20vh;
-    }
-}
-
-@media only screen and (min-width: 800px) {
     
-    h1, h2, h3 {
-        font-size:calc(3.8rem + 1.3vw);
-    }
-
-    p {
-        font-size: 1.5rem;
-    }
-
-    a {
-        font-size: 1.2rem;
-    }
-
-    div#hero-text {
-        margin-top: 20vh;
-    }
-}
-
-@media only screen and (min-width: 1080px) {
-    h1, h2, h3 {
-        font-size:calc(5.5rem + 1vw);
-    }
-
-    p {
-        font-size: 1.6rem;
-    }
-}
-
-@media only screen and (min-width: 1340px) {
-    h1, h2, h3 {
-        font-size:calc(7rem + 1vw);
+    div#links-container {
+        padding: 10vh 0;
     }
 }

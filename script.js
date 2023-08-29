@@ -4,7 +4,8 @@ const light = 'rgb(255, 255, 253)';
 const purple = 'rgb(47, 0, 255)';
 
 const colorsHero = [light, orange, purple];
-const colorsResume = [light, orange, gray];
+const colorsBody = [light, orange, gray];
+const colorsLinks = [gray, orange, purple];
 
 const heroName = document.getElementById('hero-name');
 
@@ -28,24 +29,35 @@ heroTitle.addEventListener('mouseout', () => {
     heroTitle.setAttribute('style', 'color: rgb(255, 255, 253);');
 });
 
-const resumeTitles = document.getElementsByClassName('resume-title');
-const resumeExperience = resumeTitles[0];
-const resumeEducation = resumeTitles[1];
+const bodyTitles = document.getElementsByClassName('body-title');
+const bodyExperience = bodyTitles[0];
+const bodyEducation = bodyTitles[1];
 
-resumeExperience.addEventListener('mouseover', () => {
-    let newColor = colorsResume[Math.floor(Math.random()*colorsResume.length)];
-    resumeExperience.setAttribute('style', `color: ${newColor};`);
+bodyExperience.addEventListener('mouseover', () => {
+    let newColor = colorsBody[Math.floor(Math.random()*colorsBody.length)];
+    bodyExperience.setAttribute('style', `color: ${newColor};`);
 });
 
-resumeExperience.addEventListener('mouseout', () => {
-    resumeExperience.setAttribute('style', 'color: rgb(255, 255, 253);');
+bodyExperience.addEventListener('mouseout', () => {
+    bodyExperience.setAttribute('style', 'color: rgb(255, 255, 253);');
 });
 
-resumeEducation.addEventListener('mouseover', () => {
-    let newColor = colorsResume[Math.floor(Math.random()*colorsResume.length)];
-    resumeEducation.setAttribute('style', `color: ${newColor};`);
+bodyEducation.addEventListener('mouseover', () => {
+    let newColor = colorsBody[Math.floor(Math.random()*colorsBody.length)];
+    bodyEducation.setAttribute('style', `color: ${newColor};`);
 });
 
-resumeEducation.addEventListener('mouseout', () => {
-    resumeEducation.setAttribute('style', 'color: rgb(255, 255, 253);');
+bodyEducation.addEventListener('mouseout', () => {
+    bodyEducation.setAttribute('style', 'color: rgb(255, 255, 253);');
+});
+
+const linksTitle = document.getElementById('links-title');
+
+linksTitle.addEventListener('mouseover', () => {
+    let newColor = colorsLinks[Math.floor(Math.random()*colorsLinks.length)];
+    linksTitle.setAttribute('style', `color: ${newColor};`);
+});
+
+linksTitle.addEventListener('mouseout', () => {
+    linksTitle.setAttribute('style', 'rgb(253, 36, 65);');
 });
