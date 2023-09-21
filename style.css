@@ -2,21 +2,21 @@
 
 @font-face {
     font-family: 'Instrument';
-    src: url(./Fonts/InstrumentSerif-Regular.woff2) format('woff2');
+    src: url(./sources/InstrumentSerif-Regular.woff2) format('woff2');
     font-style: normal;
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Quattro';
-    src: url(./Fonts/iAWriterQuattroS-Regular.woff) format('woff');
+    src: url(./sources/iAWriterQuattroS-Regular.woff) format('woff');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Quattro';
-    src: url(./Fonts/iAWriterQuattroS-Bold.woff) format('woff');
+    src: url(./sources/iAWriterQuattroS-Bold.woff) format('woff');
     font-style: normal;
     font-weight: bold;
 }
