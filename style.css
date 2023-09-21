@@ -161,7 +161,6 @@ a:hover {
     #container {
         height: calc(90vh - calc(var(--body-margin) * 2));
         min-height: 300px;
-        max-height: 720px;
     }
 
     .resume-flex {
