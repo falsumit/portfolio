@@ -158,6 +158,12 @@ a:hover {
 /* Media Queries */
 
 @media screen and (max-width: 720px) {
+    #container {
+        height: calc(90vh - calc(var(--body-margin) * 2));
+        min-height: 300px;
+        max-height: 720px;
+    }
+
     .resume-flex {
         display: block;
         width: 100%;
