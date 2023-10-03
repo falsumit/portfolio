@@ -1,0 +1,109 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Instrument';
+    src: url(./sources/InstrumentSerif-Regular.woff2) format('woff2');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Quattro';
+    src: url(./sources/iAWriterQuattroS-Regular.woff) format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Quattro';
+    src: url(./sources/iAWriterQuattroS-Bold.woff) format('woff');
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Document */
+
+:root {
+    --body-margin: 10px;
+    --color-sky-blue: #64b5d4;
+    --color-burnt-orange: #e26906;
+}
+
+body {
+    background: white;
+    height: 100%;
+    margin: var(--body-margin);
+}
+
+h1, h2, h3 {
+    font-family: 'Instrument', 'Times New Roman', serif;
+}
+
+h1, h2 {
+    font-size: calc(clamp(4.25rem, 13vw, 12rem) - calc(var(--body-margin) * 2));
+    line-height: calc(clamp(4.25rem, 15vw, 12rem) - calc(var(--body-margin) * 2));
+    margin: 0;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 50vh;
+}
+
+h3 {
+    font-size: calc(clamp(3.5rem, 10vw, 6rem) - calc(var(--body-margin) * 2));
+    margin-bottom: 40px;
+}
+
+p, a {
+    font-family: 'Quattro', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: -0.025rem;
+    font-size: clamp(1rem, 1.5vw , 1.2rem);
+    line-height: clamp(1.3rem, 1.5vw, 1.5rem);
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 8px 8px #9daeca);
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+#hero {
+    background: linear-gradient(to bottom, #f3f6fb, white);
+    height: 100%;
+}
+
+#navigation {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: calc(var(--body-margin) * 2);
+    border-bottom: 1px solid black;
+    margin: 10px 10px 35vh 10px;
+    padding: 10px;
+}
+
+#navigation a:hover {
+    color: var(--color-burnt-orange);
+}
+
+#content {
+    margin: 20px;
+}
+
+#content p {
+    margin-bottom: 20vh;
+    text-align: center;
+}
+
+#content:last-child {
+    margin-bottom: 0;
+}
