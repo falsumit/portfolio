@@ -72,7 +72,6 @@ p, a {
 img {
     width: 100%;
     height: auto;
-    filter: drop-shadow(0 8px 8px var(--color-dirty-blue));
 }
 
 #hero {
@@ -106,15 +105,21 @@ img {
     padding: 0 20px;
 }
 
-#gallery {
+.gallery {
     display: grid;
     gap: 40px;
 }
 
 .vert {
-    height: 50vh;
+    height: 25vh;
     width: 50%;
     border-right: 2px solid black;
+    margin-top: 80px;
+}
+
+.vert:first-of-type {
+    height: 50vh;
+    margin-top: 0;
 }
 
 #links {
@@ -149,13 +154,13 @@ img {
         padding: 0 15%;
     }
 
-    #gallery {
+    .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (min-width: 1920px) {
-    #gallery {
+    .gallery {
         grid-template-columns: repeat(3, 1fr);
     }
 }
