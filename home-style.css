@@ -27,6 +27,8 @@
     --body-margin: 10px;
     --color-sky-blue: #64b5d4;
     --color-burnt-orange: #e26906;
+    --color-dirty-blue: #d3e0f3;
+    --color-light-gray: #f3f6fb;
 }
 
 body {
@@ -90,6 +92,7 @@ a:hover {
     height: calc(100vh - calc(var(--body-margin) * 2));
     min-height: 300px;
     margin: 0 auto;
+    margin-bottom: calc(var(--body-margin) * 8);
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -108,6 +111,18 @@ a:hover {
     border-top: 1px solid white;
     margin: 10px 20px;
     padding: 10px;
+}
+
+#gallery {
+    display: grid;
+    gap: calc(var(--body-margin) * 2);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 8px 8px var(--color-dirty-blue));
 }
 
 #links {
@@ -170,5 +185,11 @@ a:hover {
 
     .resume-flex > div {
         margin-bottom: var(--body-margin);
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    #gallery {
+        grid-template-columns: repeat(4, 1fr);
     }
 }

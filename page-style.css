@@ -73,8 +73,6 @@ img {
     width: 100%;
     height: auto;
     filter: drop-shadow(0 8px 8px var(--color-dirty-blue));
-    margin-bottom: 40px;
-    /* border-radius: 6px; */
 }
 
 #hero {
@@ -98,17 +96,19 @@ img {
 }
 
 #content {
-    max-width: 1080px;
     margin: 0 auto;
 }
 
 .text {
+    max-width: 780px;
+    margin: 0 auto;
     margin-bottom: 10vh;
     padding: 0 20px;
 }
 
-#content img:last-child {
-    margin-bottom: 0;
+#gallery {
+    display: grid;
+    gap: 40px;
 }
 
 .vert {
@@ -143,9 +143,19 @@ img {
     cursor: pointer;
 }
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 1080px) {
     .text {
         margin-bottom: 15vh;
         padding: 0 15%;
+    }
+
+    #gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    #gallery {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
