@@ -1,63 +1,71 @@
-const orange = 'rgb(253, 36, 65)';
-const gray = 'rgb(20, 20, 20)';
-const light = 'rgb(255, 255, 253)';
-const purple = 'rgb(47, 0, 255)';
+const returnButton = document.getElementById('return');
 
-const colorsHero = [light, orange, purple];
-const colorsBody = [light, orange, gray];
-const colorsLinks = [gray, orange, purple];
-
-const heroName = document.getElementById('hero-name');
-
-heroName.addEventListener('mouseover', () => {
-    let newColor = colorsHero[Math.floor(Math.random()*colorsHero.length)];
-    heroName.setAttribute('style', `color: ${newColor};`);
+returnButton.addEventListener('click', () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 });
 
-heroName.addEventListener('mouseout', () => {
-    heroName.setAttribute('style', 'color: rgb(255, 255, 253);');
-});
 
-const heroTitle = document.getElementById('hero-title');
+// const orange = 'rgb(253, 36, 65)';
+// const gray = 'rgb(20, 20, 20)';
+// const light = 'rgb(255, 255, 253)';
+// const purple = 'rgb(47, 0, 255)';
 
-heroTitle.addEventListener('mouseover', () => {
-    let newColor = colorsHero[Math.floor(Math.random()*colorsHero.length)];
-    heroTitle.setAttribute('style', `color: ${newColor};`);
-});
+// const colorsHero = [light, orange, purple];
+// const colorsBody = [light, orange, gray];
+// const colorsLinks = [gray, orange, purple];
 
-heroTitle.addEventListener('mouseout', () => {
-    heroTitle.setAttribute('style', 'color: rgb(255, 255, 253);');
-});
+// const heroName = document.getElementById('hero-name');
 
-const bodyTitles = document.getElementsByClassName('body-title');
-const bodyExperience = bodyTitles[0];
-const bodyEducation = bodyTitles[1];
+// heroName.addEventListener('mouseover', () => {
+//     let newColor = colorsHero[Math.floor(Math.random()*colorsHero.length)];
+//     heroName.setAttribute('style', `color: ${newColor};`);
+// });
 
-bodyExperience.addEventListener('mouseover', () => {
-    let newColor = colorsBody[Math.floor(Math.random()*colorsBody.length)];
-    bodyExperience.setAttribute('style', `color: ${newColor};`);
-});
+// heroName.addEventListener('mouseout', () => {
+//     heroName.setAttribute('style', 'color: rgb(255, 255, 253);');
+// });
 
-bodyExperience.addEventListener('mouseout', () => {
-    bodyExperience.setAttribute('style', 'color: rgb(255, 255, 253);');
-});
+// const heroTitle = document.getElementById('hero-title');
 
-bodyEducation.addEventListener('mouseover', () => {
-    let newColor = colorsBody[Math.floor(Math.random()*colorsBody.length)];
-    bodyEducation.setAttribute('style', `color: ${newColor};`);
-});
+// heroTitle.addEventListener('mouseover', () => {
+//     let newColor = colorsHero[Math.floor(Math.random()*colorsHero.length)];
+//     heroTitle.setAttribute('style', `color: ${newColor};`);
+// });
 
-bodyEducation.addEventListener('mouseout', () => {
-    bodyEducation.setAttribute('style', 'color: rgb(255, 255, 253);');
-});
+// heroTitle.addEventListener('mouseout', () => {
+//     heroTitle.setAttribute('style', 'color: rgb(255, 255, 253);');
+// });
 
-const linksTitle = document.getElementById('links-title');
+// const bodyTitles = document.getElementsByClassName('body-title');
+// const bodyExperience = bodyTitles[0];
+// const bodyEducation = bodyTitles[1];
 
-linksTitle.addEventListener('mouseover', () => {
-    let newColor = colorsLinks[Math.floor(Math.random()*colorsLinks.length)];
-    linksTitle.setAttribute('style', `color: ${newColor};`);
-});
+// bodyExperience.addEventListener('mouseover', () => {
+//     let newColor = colorsBody[Math.floor(Math.random()*colorsBody.length)];
+//     bodyExperience.setAttribute('style', `color: ${newColor};`);
+// });
 
-linksTitle.addEventListener('mouseout', () => {
-    linksTitle.setAttribute('style', 'rgb(253, 36, 65);');
-});
+// bodyExperience.addEventListener('mouseout', () => {
+//     bodyExperience.setAttribute('style', 'color: rgb(255, 255, 253);');
+// });
+
+// bodyEducation.addEventListener('mouseover', () => {
+//     let newColor = colorsBody[Math.floor(Math.random()*colorsBody.length)];
+//     bodyEducation.setAttribute('style', `color: ${newColor};`);
+// });
+
+// bodyEducation.addEventListener('mouseout', () => {
+//     bodyEducation.setAttribute('style', 'color: rgb(255, 255, 253);');
+// });
+
+// const linksTitle = document.getElementById('links-title');
+
+// linksTitle.addEventListener('mouseover', () => {
+//     let newColor = colorsLinks[Math.floor(Math.random()*colorsLinks.length)];
+//     linksTitle.setAttribute('style', `color: ${newColor};`);
+// });
+
+// linksTitle.addEventListener('mouseout', () => {
+//     linksTitle.setAttribute('style', 'rgb(253, 36, 65);');
+// });
