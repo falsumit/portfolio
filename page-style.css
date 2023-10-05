@@ -107,7 +107,7 @@ img {
 
 .gallery {
     display: grid;
-    gap: 40px;
+    gap: 20px;
 }
 
 .vert {
