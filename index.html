@@ -3,86 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./sources/Goat.png">
+    <link rel="icon" type="image/png" href="./images/goat.svg">
     <link rel="stylesheet" href="https://falsumit.github.io/normalize.css/normalize.css">
-    <link rel="stylesheet" href="./home-style.css">
-    <script src="./script.js" defer></script>
-    <title>Brooks Clarke</title>
+    <link rel="stylesheet" href="./site-style.css">
+    <link rel="stylesheet" href="./index-style.css">
+    <title>Brooks Design Works</title>
 </head>
 <body>
     <div id="container">
+        <div id="nav">
+            <div id="logo">
+                <img src="./images/goat.svg" alt="logo">
+            </div>
+            <div class="links">
+                <a href="./index.html" id="current-page">Home</a>
+            </div>
+            <div class="links">
+                <a href="./about.html">About</a>
+            </div>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/bfclarke/" target="_blank">Contact</a>
+            </div>
+        </div>
+
         <div id="hero">
-            <div id="heading">
+            <h1>Brooks Clarke</h1>
+            <h2>Graphic Designer</h2>
+            <h4>Hello! I am a Maryland-based designer specializing in branding, UI/UX, and web design.</h4>
+        </div>
+
+        <div class="content">
+            <h3>Work</h3>
+            <div class="duo">
                 <div>
-                    <h1 class="hero-heading">Brooks Clarke</h1>
-                    <h2 class="hero-heading">Graphic Designer</h2>
-                    <h2 class="hero-heading">Software Developer</h2>
+                    <a href="./chefs.html">
+                        <div><img src="./images/1-chefs/0-logo-pat.jpeg" alt="Chefs Atelier Cook Happy"></div>
+                        <div><h5>Chefs Atelier</h5></div>
+                        <div><p>Branding, Packaging Design</p></div>
+                    </a>
+                </div>
+                <div>
+                    <a href="./haven.html">
+                        <div><img src="./images/2-haven/0-hero.jpg" alt="Haven Well Within"></div>
+                        <div><h5>Haven Well Within</h5></div>
+                        <div><p>Branding</p></div>
+                    </a>
+                </div>
+                <div>
+                    <a href="./umd.html">
+                        <div><img src="./images/3-umd/0-banner.jpg" alt="University of Maryland"></div>
+                        <div><h5>University of Maryland</h5></div>
+                        <div><p>Art Direction, UI/UX, Web and Print Design</p></div>
+                    </a>
+                </div>
+                <div>
+                    <a href="./ssds.html">
+                        <div><img src="./images/4-ssds/0-home.jpeg" alt="Silver Spring Day School"></div>
+                        <div><h5>Silver Spring Day School</h5></div>
+                        <div><p>Art Direction, UI/UX, Web Design</p></div>
+                    </a>
+                </div>
+                <div>
+                    <a href="./ge.html">
+                        <div><img src="./images/5-concrete/0-ge.jpg" alt="Global Emissionairy"></div>
+                        <div><h5>Global Emissionairy</h5></div>
+                        <div><p>Branding, UI/UX, Web Design</p></div>
+                    </a>
+                </div>
+                <div>
+                    <a href="./grad.html">
+                        <div><img src="./images/6-grad/0-hero.jpg" alt="Graduate Work"></div>
+                        <div><h5>Graduate Thesis</h5></div>
+                        <div><p>Branding, Print Design</p></div>
+                    </a>
                 </div>
             </div>
         </div>
-        <div id="navigation">
-            <div><a href="https://dribbble.com/brooksc" target="_blank">Dribbble</a></div>
-            <div><a href="https://github.com/falsumit" target="_blank">GitHub</a></div>
-            <div><a href="https://www.linkedin.com/in/bfclarke/" target="_blank">Contact</a></div>
-        </div>
-    </div>
 
-    <div id="work">
-        <h3>Work</h3>
-        <div id="gallery">
-            <a href="./umd.html"><img src="./sources/umd/hero-4.jpg" alt="University of Maryland"></a>
-            <a href="./chefsatelier.html"><img src="./sources/chefs-atelier/hero-1.jpg" alt="Chefs Atelier"></a>
-            <a href="./graduate.html"><img src="./sources/graduate-work/royal-hero-1.jpg" alt="Graduate Work"></a>
-            <a href="./personal.html"><img src="./sources/personal-work/48-hero.jpg" alt="Personal Designs"></a>
-        </div>
-    </div>
-
-    <div id="resume">
-        <h3>Experience</h3>
-        <div class="resume-flex">
-            <div>
-                <p class="title">Graj and Gustavsen</p>
-                <p>Graphic Designer</p>
-                <p class="date">2020-2021</p>
-            </div>
-            <div>
-                <p class="title">University of Maryland</p>
-                <p>Graphic Designer</p>
-                <p class="date">2017-2021</p>
-            </div>
-            <div>
-                <p class="title">King Cow Interactive</p>
-                <p>Graphic Designer</p>
-                <p class="date">2013-2019</p>
+        <div class="content">
+            <h3>Experience</h3>
+            <div class="trio">
+                <div>
+                    <h6>Graj and Gustavsen</h6>
+                    <p>Graphic Designer – Agency</p>
+                    <p>2020 - 2021</p>
+                </div>
+                <div>
+                    <h6>University of Maryland</h6>
+                    <p>Graphic Designer – In-house</p>
+                    <p>2017 - 2022</p>
+                </div>
+                <div>
+                    <h6>King Cow Interactive</h6>
+                    <p>Graphic Designer – Agency</p>
+                    <p>2013 - 2022</p>
+                </div>
             </div>
         </div>
 
-        <h3>Education</h3>
-        <div class="resume-flex">
-            <div>
-                <p class="title">Maryland Institute College of Art</p>
-                <p>Masters in Graphic Design</p>
-                <p class="date">2019</p>
+        <div class="content">
+            <h3>Education</h3>
+            <div class="trio">
+                <div>
+                    <h6>Maryland Institute College of Art</h6>
+                    <p>Master of Arts – Graphic Design</p>
+                    <p>2019</p>
+                </div>
+                <div>
+                    <h6>University of Maryland</h6>
+                    <p>Bachelor of Arts – Fine Art</p>
+                    <p>2016</p>
+                </div>
             </div>
-            <div>
-                <p class="title">University of Maryland</p>
-                <p>Bachelors in Art</p>
-                <p class="date">2016</p>
-            </div>
-            <div>
-                <p class="title">Montgomery College</p>
-                <p>Associates in Graphic Design</p>
-                <p class="date">2013</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="links">
-        <h4>Links</h4>
-        <div id="links-flex">
-            <div><a href="https://dribbble.com/brooksc" target="_blank">Dribbble</a></div>
-            <div><a href="https://github.com/falsumit" target="_blank">GitHub</a></div>
-            <div><a id="return">Back to Top</a></div>
         </div>
     </div>
 </body>

@@ -1,0 +1,53 @@
+/* Document */
+
+h3 {
+    margin-bottom: 1.5em;
+}
+
+/* IDs and Classes */
+
+.duo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.duo img {
+    width: 100%;
+    height: auto;
+}
+
+.duo p {
+    font-size: 1rem;
+    margin: 0.75rem 0 2rem 0;
+}
+
+.trio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.trio div p:last-child {
+    margin-bottom: 0;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 799px) {
+    .duo {
+        display: block;
+    }
+
+    .duo > div {
+        margin-bottom: 4rem;
+    }
+
+    .trio {
+        display: block;
+    }
+
+    .trio > div {
+        margin-bottom: 4rem;
+    }
+}

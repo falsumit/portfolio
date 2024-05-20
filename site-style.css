@@ -1,0 +1,146 @@
+/* Fonts */
+
+@font-face {
+    font-family: "Apfel";
+    src: url(./fonts/ApfelGrotezk-Regular.woff2) format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* Document */
+
+:root {
+    --color-orange: #FFA400;
+    --color-teal: #0099A8;
+    --color-gray: #808080;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Apfel", Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+h1, h2, h3 {
+    text-decoration: solid underline var(--color-orange) 0.25rem;
+}
+
+h1, h2 {
+    font-size: 4rem; /* fallback size */
+    font-size: clamp(3rem, 8vw, 4rem);
+    text-underline-offset: 0.3em;
+}
+
+h3, h4 {
+    font-size: 2.5rem;
+    text-underline-offset: 0.3em;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+h5 {
+    font-size: 2rem;
+    margin: 1.2rem 0 0.75rem 0;
+}
+
+h6 {
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+}
+
+p, a {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    text-decoration: none;
+}
+
+p {
+    color: var(--color-gray);
+}
+
+a {
+    font-family: "Apfel", Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: var(--color-teal);
+}
+
+img {
+    display: block;
+}
+
+/* IDs and Classes */
+
+div#container {
+    margin: 2rem 4rem;
+}
+
+#container .content:last-child {
+    margin-bottom: 6rem;
+}
+
+div#nav {
+    margin-bottom: 6em;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+div#logo {
+    flex-grow: 2;
+}
+
+div#logo img {
+    height: 7rem;
+    width: auto;
+    margin: 0;
+}
+
+div.links a {
+    vertical-align: middle;
+}
+
+a#current-page {
+    text-decoration: solid underline var(--color-orange) 0.17rem;
+    text-underline-offset: 0.3em;
+}
+
+div#hero {
+    margin-bottom: 6rem;
+}
+
+.content {
+    margin-top: 6rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 799px) {
+    h3, h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.7rem;
+    }
+
+    div#container {
+        margin: 1rem 2rem;
+    }
+}
