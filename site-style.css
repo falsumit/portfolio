@@ -16,12 +16,13 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Apfel", Helvetica, sans-serif;
-    font-weight: normal;
+    /* font-family: "Apfel", Helvetica, sans-serif; */
+    /* font-weight: normal; */
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
 h1, h2, h3 {
-    text-decoration: solid underline var(--color-orange) 0.25rem !important;
+    text-decoration: solid underline var(--color-orange) 0.25rem;
 }
 
 h1, h2 {
