@@ -54,7 +54,8 @@ h4 {
 p, ul {
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
     font-size: 1rem;
-    color: var(--color-gray)
+    line-height: 1.3em;
+    color: var(--color-gray);
 }
 
 a {
@@ -134,6 +135,13 @@ body {
 
 #title {
     margin-bottom: 3rem;
+}
+
+#hero h4 {
+    margin-top: 4rem;
+    line-height: 1.3em;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    font-weight: 400;
 }
 
 .block img {
