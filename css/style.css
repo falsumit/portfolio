@@ -25,6 +25,34 @@ font-family: 'CabinetGrotesk-Medium';
     text-rendering: optimizeLegibility;
 }
 
+@font-face {
+    font-family: 'Figtree';
+    src: url('../fonts/Figtree-Bold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('../fonts/Figtree-BoldItalic.woff2') format('woff2');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+font-family: 'Figtree';
+    src: url('../fonts/Figtree-Regular.woff2') format('woff2');
+    font-weight: 400;   
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Figtree';
+        src: url('../fonts/Figtree-Italic.woff2') format('woff2');
+        font-weight: 400;   
+        font-style: italic;
+    }
+
 h1, h2, h3, h4, p, a {
     margin: 0;
 }
@@ -52,8 +80,8 @@ h4 {
 }
 
 p, ul {
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-    font-size: 1rem;
+    font-family: 'Figtree', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    font-size: 1.1rem;
     line-height: 1.3em;
     color: var(--color-gray);
 }
@@ -140,8 +168,9 @@ body {
 #hero h4 {
     margin-top: 4rem;
     line-height: 1.3em;
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    font-family: 'Figtree', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
     font-weight: 400;
+    color: var(--color-gray);
 }
 
 .block img {
