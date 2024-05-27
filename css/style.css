@@ -146,6 +146,7 @@ body {
 
 #hero {
     height: calc(100vh - 32px);
+    height: calc(calc(var(--vh, 1vh) * 100) - 32px);
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
@@ -153,6 +154,7 @@ body {
 
 #banner {
     height: calc(50vh - 32px);
+    height: calc(calc(var(--vh, 1vh) * 50) - 32px);
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
