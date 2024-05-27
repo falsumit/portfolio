@@ -87,7 +87,7 @@ li {
 }
 
 .duo h4 {
-    margin: 0.75rem 0 0.5rem 0;
+    margin: 2rem 0 0.75rem 0;
 }
 
 .labels {
@@ -199,6 +199,10 @@ body {
 .desc {
     margin: 0 auto;
     max-width: 720px;
+}
+
+.desc p {
+    margin: 1.3em 0;
 }
 
 .yap {
