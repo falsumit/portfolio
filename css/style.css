@@ -115,6 +115,7 @@ body {
     top: 0;
     width: calc(100% - 32px);
     background-color: var(--color-white);
+    max-width: 1920px;
 }
 
 #nav {
