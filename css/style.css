@@ -32,15 +32,18 @@ h1, h2, h3, h4, #nav a {
 h1, h2 {
     font-size: clamp(3rem, 8vw, 4.5rem);
     letter-spacing: -0.1rem;
+    line-height: 1.2em;
 }
 
 h3 {
     font-size: clamp(1.5rem, 5vw, 2.5rem);
     letter-spacing: -0.05rem;
+    line-height: 1.3em;
 }
 
 h4 {
     font-size: 1.3rem;
+    line-height: 1.3em;
 }
 
 p, a, ul {
@@ -87,7 +90,7 @@ li {
 }
 
 .duo h4 {
-    margin: 2rem 0 0.75rem 0;
+    margin: 1.5rem 0 0.5rem 0;
 }
 
 .labels {
