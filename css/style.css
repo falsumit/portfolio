@@ -149,6 +149,7 @@ body {
     width: calc(100% - 32px);
     background-color: var(--color-white);
     max-width: 1920px;
+    z-index: 1;
 }
 
 #nav {
@@ -236,6 +237,16 @@ body {
 
 .stack p {
     margin-top: 1rem;
+}
+
+.portfolio-item {
+    opacity: 100%;
+    transition-duration: 300ms;
+}
+
+.portfolio-item:hover {
+    opacity: 50%;
+    transition-duration: 300ms;
 }
 
 .desc {
