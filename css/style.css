@@ -163,7 +163,7 @@ body {
 #nav img {
     display: block;
     width: auto;
-    height: 50px;
+    height: 40px;
     transition-duration: 300ms;
     margin: 1rem 0;
 }
@@ -292,6 +292,12 @@ button:hover {
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 761px) {
+    #nav img {
+        display: block;
+        width: auto;
+        height: 50px;
+    }
+
     .duo {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
