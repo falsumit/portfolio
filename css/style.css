@@ -289,6 +289,11 @@ button:hover {
     transition-duration: 300ms;
 }
 
+video {
+    width: 100%;
+    height: auto;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 761px) {
