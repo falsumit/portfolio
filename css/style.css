@@ -289,10 +289,15 @@ button:hover {
     transition-duration: 300ms;
 }
 
-video {
+/* video {
     width: 100%;
     height: auto;
-}
+} */
+
+iframe { 
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
 
 /* MEDIA QUERIES */
 
