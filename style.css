@@ -230,8 +230,8 @@ a#current-page, .highlighted-text {
 }
 
 #hero-text {
-    font-size: clamp(2.5rem, 4.5vw, 9rem);
-    font-size: clamp(2.5rem, 4.5svw, 9rem);
+    font-size: clamp(2.7rem, 4.5vw, 9rem);
+    font-size: clamp(2.7rem, 4.5svw, 9rem);
     transform: 0ms;
     transition-duration: 0ms;
     margin-bottom: 0;
