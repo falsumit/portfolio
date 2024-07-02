@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Generator';
     src:
-        url('../Downloads/generator-by-riptype/web/woff2/Generator-Regular.woff2') format('woff2')
-        url('../Downloads/generator-by-riptype/web/woff/Generator-Regular.woff') format('woff');
+        url('./fonts/generator/woff2/Generator-Regular.woff2') format('woff2')
+        url('./fonts/generator/woff/Generator-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
@@ -10,8 +10,8 @@
 @font-face {
     font-family: 'Generator';
     src:
-        url('../Downloads/generator-by-riptype/web/woff2/Generator-Bold.woff2') format('woff2')
-        url('../Downloads/generator-by-riptype/web/woff/Generator-Bold.woff') format('woff');
+        url('./fonts/generator/woff2/Generator-Bold.woff2') format('woff2')
+        url('./fonts/generator/woff/Generator-Bold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
