@@ -234,7 +234,6 @@ a#current-page, .highlighted-text {
     font-size: clamp(2.9rem, 4.5svw, 9rem);
     transform: 0ms;
     transition-duration: 0ms;
-    margin-bottom: 0;
 }
 
 #home-grid p {
